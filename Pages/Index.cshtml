@@ -1,10 +1,674 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="burger-menu" id="burger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
 </div>
+
+<header class="jc-ai">
+    <div class="head_logo">
+        <img src="assets/logo.svg" alt="logo img">
+    </div>
+    <nav class="main-nav">
+        <ul class="nav-ul">
+            <li><a href="#courses-sc">КУРСИ</a></li>
+            <li><a href="#about-sc">ПРО НАС</a></li>
+            <li><a href="#teachers-sc">ВИКЛАДАЧІ</a></li>
+            <li><a href="#cost-sc">ВАРТІСТЬ</a></li>
+            <li><a href="#news-sc">НОВИНИ</a></li>
+            <li><a href="#feedback-sc">ВІДГУКИ</a></li>
+            <li><a href="#qas-sc">FAQ</a></li>
+        </ul>
+    </nav>
+    <div class="head-btns jc-ai">
+        <div>
+            <a href="#" class="test-lesson-btn">ПРОБНИЙ УРОК</a>
+        </div>
+        <div>
+            <a href="#" class="jc-ai login-btn">
+                <img src="assets/enter_profile.svg" alt="enter profile img" class="login-btn-icon">
+                УВІЙТИ
+            </a>
+        </div>
+        <div class="choose_lang_div">
+            <button class="choose_lang_btn">
+                <img src="assets/lang.svg" alt="language img" class="lang-btn-icon">
+                UA ▾
+            </button>
+
+            <div class="dropdown-content">
+                <a href="#">Українська</a>
+                <a href="#">Англійська</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="side-menu" id="side-menu">
+    <ul>
+        <li><a href="#courses-sc">КУРСИ</a></li>
+        <li><a href="#about-sc">ПРО НАС</a></li>
+        <li><a href="#teachers-sc">ВИКЛАДАЧІ</a></li>
+        <li><a href="#cost-sc">ВАРТІСТЬ</a></li>
+        <li><a href="#news-sc">НОВИНИ</a></li>
+        <li><a href="#feedback-sc">ВІДГУКИ</a></li>
+        <li><a href="#qas-sc">FAQ</a></li>
+    </ul>
+</div>
+
+<section class="free-less-div">
+    <span class="free-less-span">Отримуй до 5 уроків в подарунок при першій оплаті !</span>
+</section>
+
+<section class="main-sc" id="main-sc">
+    <div class="main-content-all">
+        <div class="main-content">
+            <h1 class="main-header">
+                ОНЛАЙН-ШКОЛА АНГЛІЙСЬКОЇ МОВИ
+            </h1>
+            <a href="#" class="go-to-action-standart-btn">ПРОЙТИ ПОПЕРЕДНЄ ТЕСТУВАННЯ</a>
+        </div>
+        <p class="main-content-p">
+            GET BETTER - місце, де навчання — легка справа, а успіх – наша гарантія.
+        </p>
+    </div>
+</section>
+
+<section class="teacher-filter-sc sc-base" id="teacher-filter-sc">
+    <div>
+        <p class="sc-header-p">ПІДБЕРЕМО ПОТРІБНОГО ВАМ ВИКЛАДАЧА</p>
+        <p class="sc-description-p">Ми точно знаємо, як навчати!</p>
+    </div>
+
+    <div class="all-filter-items">
+        <div class="all-choose-items">
+            <div class="little-choose-items">
+                <div class="level-choose-items-all">
+                    <p class="choose-item-header">Мій рівень</p>
+                    <div class="level-choose-items">
+                        <div class="choose-item ch-i-level">
+                            <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                            <p class="choose-item-p">A1-A2</p>
+                        </div>
+
+                        <div class="choose-item ch-i-level">
+                            <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                            <p class="choose-item-p">B1-B2</p>
+                        </div>
+
+                        <div class="choose-item ch-i-level">
+                            <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                            <p class="choose-item-p">C1-C2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-choose-items-all">
+                    <p class="choose-item-header">Підготовка до тесту</p>
+                    <div class="test-choose-items">
+                        <div class="choose-item ch-i-level">
+                            <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                            <p class="choose-item-p">IELTS</p>
+                        </div>
+                        <div class="choose-item ch-i-level">
+                            <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                            <p class="choose-item-p">TOELF</p>
+                        </div>
+                        <div class="choose-item ch-i-level">
+                            <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                            <p class="choose-item-p">CAE</p>
+                        </div>
+                        <div class="choose-item ch-i-level">
+                            <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                            <p class="choose-item-p">КРОК</p>
+                        </div>
+                        <div class="choose-item ch-i-level">
+                            <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                            <p class="choose-item-p">НМТ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accent-choose-items-all">
+                    <p class="choose-item-header">Регіональний акцент</p>
+                    <div class="accent-choose-items">
+                        <div class="choose-item ch-i-accent">
+                            <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                            <p class="choose-item-p">Американський</p>
+                        </div>
+                        <div class="choose-item ch-i-accent">
+                            <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                            <p class="choose-item-p">Британський</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="direction-choose-items-all">
+                <p class="choose-item-header">Уроки для</p>
+                <div class="direction-choose-items">
+
+                    <div class="choose-item ch-i-dir">
+                        <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                        <p class="choose-item-p">Дітей та підлітків</p>
+                    </div>
+
+                    <div class="choose-item ch-i-dir">
+                        <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                        <p class="choose-item-p">Підготовка до співбесіди</p>
+                    </div>
+
+                    <div class="choose-item ch-i-dir">
+                        <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                        <p class="choose-item-p">Розмовна англійська</p>
+                    </div>
+
+                    <div class="choose-item ch-i-dir">
+                        <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                        <p class="choose-item-p">Бізнес англійська</p>
+                    </div>
+
+                    <div class="choose-item ch-i-dir">
+                        <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                        <p class="choose-item-p">Англійська для подорожей</p>
+                    </div>
+
+                    <div class="choose-item ch-i-dir">
+                        <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                        <p class="choose-item-p">Навчання за кордоном</p>
+                    </div>
+
+                    <div class="choose-item ch-i-dir">
+                        <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                        <p class="choose-item-p">Медична англійська</p>
+                    </div>
+
+                    <div class="choose-item ch-i-dir">
+                        <img class="choose-item-img" src="assets/t-filter-circle-nchecked.svg" alt="circle img">
+                        <p class="choose-item-p">ІТ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="t-filter-img">
+            <img src="assets/t-filter-img.svg" alt="human img">
+        </div>
+    </div>
+
+    <div class="sc-btn-div">
+        <a href="#" class="go-to-action-standart-btn">ЗАСТОСУВАТИ ФІЛЬТР</a>
+    </div>
+</section>
+
+<section class="teachers-sc sc-base" id="teachers-sc">
+    <div>
+        <p class="sc-header-p">ОСЬ КОГО МИ ДЛЯ ВАС ЗНАЙШЛИ!</p>
+        <img src="assets/sign.svg" alt="sign img">
+    </div>
+
+    <div class="swiper-container-teach teach-items">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide teach-item">
+                <img src="assets/teacher-img.svg" alt="teacher img">
+                <p class="t-name">Олег</p>
+                <p class="t-exp">10 років викладання, 150+ учнів</p>
+                <p class="t-comment">“Прекрасний викладач! Завжди підбирає ...</p>
+                <p class="t-stud-feedback">Віктор, вивчає англійську 7 місяців</p>
+            </div>
+
+            <div class="swiper-slide teach-item">
+                <img src="assets/teacher-img.svg" alt="teacher img">
+                <p class="t-name">Олег</p>
+                <p class="t-exp">10 років викладання, 150+ учнів</p>
+                <p class="t-comment">“Прекрасний викладач! Завжди підбирає ...</p>
+                <p class="t-stud-feedback">Віктор, вивчає англійську 7 місяців</p>
+            </div>
+
+            <div class="swiper-slide teach-item">
+                <img src="assets/teacher-img.svg" alt="teacher img">
+                <p class="t-name">Олег</p>
+                <p class="t-exp">10 років викладання, 150+ учнів</p>
+                <p class="t-comment">“Прекрасний викладач! Завжди підбирає ...</p>
+                <p class="t-stud-feedback">Віктор, вивчає англійську 7 місяців</p>
+            </div>
+
+            <div class="swiper-slide teach-item">
+                <img src="assets/teacher-img.svg" alt="teacher img">
+                <p class="t-name">Олег</p>
+                <p class="t-exp">10 років викладання, 150+ учнів</p>
+                <p class="t-comment">“Прекрасний викладач! Завжди підбирає ...</p>
+                <p class="t-stud-feedback">Віктор, вивчає англійську 7 місяців</p>
+            </div>
+
+            <div class="swiper-slide teach-item">
+                <img src="assets/teacher-img.svg" alt="teacher img">
+                <p class="t-name">Олег</p>
+                <p class="t-exp">10 років викладання, 150+ учнів</p>
+                <p class="t-comment">“Прекрасний викладач! Завжди підбирає ...</p>
+                <p class="t-stud-feedback">Віктор, вивчає англійську 7 місяців</p>
+            </div>
+
+            <div class="swiper-slide teach-item">
+                <img src="assets/teacher-img.svg" alt="teacher img">
+                <p class="t-name">Олег</p>
+                <p class="t-exp">10 років викладання, 150+ учнів</p>
+                <p class="t-comment">“Прекрасний викладач! Завжди підбирає ...</p>
+                <p class="t-stud-feedback">Віктор, вивчає англійську 7 місяців</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="news-nav">
+        <div class="swiper-teach-button-prev">
+            <img src="assets/arrow-left.svg" alt="arrow left img">
+        </div>
+        <div class="swiper-teach-button-next">
+            <img src="assets/arrow-right.svg" alt="arrow right img">
+        </div>
+    </div>
+</section>
+
+<section class="courses-sc sc-base" id="courses-sc">
+    <div>
+        <p class="sc-header-p">КУРСИ</p>
+        <img src="assets/sign.svg" alt="sign img">
+        <p class="sc-description-p">Визнач МЕТУ та досягай ЦІЛЕЙ з нами!</p>
+    </div>
+    <div class="courses-inf">
+        <div class="courses-inf-item">
+            <span class="courses-inf-item-header">Developer ++</span>
+            <span class="courses-inf-item-content">Якщо твоя мета - професійне зростання в технологічному середовищі</span>
+        </div>
+
+        <div class="courses-inf-item">
+            <span class="courses-inf-item-header">Pass or Die</span>
+            <span class="courses-inf-item-content">Якщо твоя мета - успішне складання іспитів чи підготовка до міжнародних екзаменів</span>
+        </div>
+
+        <div class="courses-inf-item">
+            <span class="courses-inf-item-header ">BackPackers</span>
+            <span class="courses-inf-item-content">Якщо твоя мета – якісно подорожувати світом без мовного бар'єру</span>
+        </div>
+
+        <div class="courses-inf-item">
+            <span class="courses-inf-item-header">Get Better!</span>
+            <span class="courses-inf-item-content">Якщо твоя мета - просто покращити свої знання в англійській мові для загального розвитку</span>
+        </div>
+    </div>
+    <div class="sc-btn-div">
+        <a href="#" class="go-to-action-standart-btn">ЗАМОВИТИ КОНCУЛЬТАЦІЮ</a>
+    </div>
+</section>
+
+<section class="corporate-lessons-sc sc-base" id="corporate-lessons-sc">
+    <div>
+        <p class="sc-header-p sc-p-marg">КОРПОРАТИВНЕ НАВЧАННЯ З GET BETTER</p>
+        <img src="assets/sign.svg" alt="sign img">
+        <p class="sc-description-p-corp corp-lessons-main-description">У сучасному світі володіння англійською мовою є однією з ключових навичок для успіху в бізнесі. Наша онлайн школа Get Better пропонує інноваційні рішення для корпоративного навчання, які забезпечують:</p>
+    </div>
+
+    <div class="corporate-lessons-sc-inf jc-ai">
+        <div class="corporate-lessons-item">
+            <img src="assets/tick.svg" alt="tick img">
+            <span class="corp-less-item-header">Професійний ріст</span>
+            <span class="corp-less-item-description">Покращення мовних навичок для спілкуватися з міжнародними партнерами та клієнтами.</span>
+        </div>
+
+        <div class="corporate-lessons-item">
+            <img src="assets/tick.svg" alt="tick img">
+            <span class="corp-less-item-header">Персональний підхід</span>
+            <span class="corp-less-item-description">Навчальні плани, що відповідають потребам вашого бізнесу та рівню знань кожного співробітника.</span>
+        </div>
+
+        <div class="corporate-lessons-item">
+            <img src="assets/tick.svg" alt="tick img">
+            <span class="corp-less-item-header">Доступність</span>
+            <span class="corp-less-item-description">Наші онлайн курси дозволять займатись навчанням у зручний для вас час та з будь-якого місця.</span>
+        </div>
+    </div>
+
+    <div class="sc-btn-div">
+        <a href="#" class="go-to-action-standart-btn">ЗАМОВИТИ КОНCУЛЬТАЦІЮ</a>
+    </div>
+
+</section>
+
+<section class="cost-sc sc-base" id="cost-sc">
+    <div class="cost-sc-all">
+        <div>
+            <div>
+                <p class="sc-header-p">ВАРТІСТЬ НАВЧАННЯ</p>
+                <p class="sc-description-p">Що більше занять то нижча ціна!</p>
+            </div>
+            <div class="cost-feach-div-items">
+                <div class="cost-feach-div">
+                    <img src="assets/circle.svg" alt="circle img">
+                    <span class="cost-feach-span">Заняття триває 60 хвилин</span>
+                </div>
+
+                <div class="cost-feach-div">
+                    <img src="assets/circle.svg" alt="circle img">
+                    <span class="cost-feach-span">Ціна - від 280₴</span>
+                </div>
+
+                <div class="cost-feach-div">
+                    <img src="assets/circle.svg" alt="circle img">
+                    <span class="cost-feach-span">Можлива оплата частинами</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-container-cost cost-items-div">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide cost-item">
+                    <p class="cost-item-head-p">Мінімальний</p>
+                    <span class="cost-item-less">10 занять</span>
+                    <p class="cost-item-p">Розшириш свій словниковий запас та підвищиш свою мовну впевненість</p>
+                    <div class="cost-item-div">
+                        <span class="cost-item-prize">+1 заняття в подарунок</span>
+                        <span class="cost-item-cost">3 000 грн</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide cost-item cost-item-main">
+                    <p class="cost-item-head-p">Стандартний</p>
+                    <span class="cost-item-less">20 занять</span>
+                    <p class="cost-item-p cost-item-p-margin">Заповниш прогалини у знаннях та значно покращиш свою розмовну англійську</p>
+                    <div class="cost-item-div">
+                        <span class="cost-item-prize">+2 заняття в подарунок</span>
+                        <span class="cost-item-cost">6 000 грн</span>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide cost-item cost-item-no-margin">
+                    <p class="cost-item-head-p">Вигідний</p>
+                    <span class="cost-item-less">50 занять</span>
+                    <p class="cost-item-p">Подолаєш мовний бар’єр та піднімеш свою англійську до нового рівня</p>
+                    <div class="cost-item-div">
+                        <span class="cost-item-prize">+5 заняття в подарунок</span>
+                        <span class="cost-item-cost">15 000 грн</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cost-nav">
+            <div class="swiper-cost-button-prev">
+                <img src="assets/arrow-left.svg" alt="arrow left img">
+            </div>
+            <div class="swiper-cost-button-next">
+                <img src="assets/arrow-right.svg" alt="arrow right img">
+            </div>
+        </div>
+
+        <div class="sc-btn-div">
+            <a href="#" class="go-to-action-standart-btn">ЗАПИСАТИСЯ НА ПРОБНИЙ УРОК</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="about-sc sc-base" id="about-sc">
+    <div>
+        <div>
+            <p class="sc-header-p">ПРО GET BETTER</p>
+            <p class="sc-description-p">Обираючи будь-який курс Ви отримаєте:</p>
+        </div>
+
+        <div class="about-content">
+            <div>
+                <img src="assets/about-img.svg" alt="about img" class="about-content-img">
+            </div>
+
+            <div class="about-item-divs">
+                <div class="about-item-div">
+                    <div class="about-item">
+                        <img src="assets/tick.svg" alt="tick icon">
+                        <p class="about-head-item">Дистанційність</p>
+                    </div>
+                    <p class="about-description-item">доступ з будь-якого куточку світу</p>
+                </div>
+
+                <div class="about-item-div">
+                    <div class="about-item">
+                        <img src="assets/tick.svg" alt="tick icon">
+                        <p class="about-head-item">Зручність</p>
+                    </div>
+                    <p class="about-description-item">команда працює для вас: домашні завдання, зміна графіку, тести, запис на додаткові заняття</p>
+                </div>
+
+                <div class="about-item-div">
+                    <div class="about-item">
+                        <img src="assets/tick.svg" alt="tick icon">
+                        <p class="about-head-item">Професійність</p>
+                    </div>
+                    <p class="about-description-item">всі викладачі мають вищу освіту та проходять курси з підвищення кваліфікації</p>
+                </div>
+
+                <div class="about-item-div">
+                    <div class="about-item">
+                        <img src="assets/tick.svg" alt="tick icon">
+                        <p class="about-head-item">Безкоштовні бонуси</p>
+                    </div>
+                    <p class="about-description-item">доступ до онлайн версії підручника, онлайн лекції на різні теми та інші англомовні заходи</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="news-sc sc-base" id="news-sc">
+    <div class="news-content">
+        <div class="news-content-head">
+            <div>
+                <p class="sc-header-p">НОВИНИ</p>
+                <p class="sc-description-p">Ознайомтесь з цікавими подіями!</p>
+            </div>
+        </div>
+
+        <div class="swiper news-items">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide news-item">
+                    <img src="assets/news-ph-test.svg" alt="news photo">
+                    <p class="news-header">Інтерактивний воркшоп "Говоримо без страху"</p>
+                    <p class="news-text">Запрошуємо всіх бажаючих долучитися до нашого мовного клубу...</p>
+                </div>
+                <div class="swiper-slide news-item">
+                    <img src="assets/news-ph-test.svg" alt="news photo">
+                    <p class="news-header">Інтерактивний воркшоп "Говоримо без страху"</p>
+                    <p class="news-text">Запрошуємо всіх бажаючих долучитися до нашого мовного клубу...</p>
+                </div>
+                <div class="swiper-slide news-item">
+                    <img src="assets/news-ph-test.svg" alt="news photo">
+                    <p class="news-header">Інтерактивний воркшоп "Говоримо без страху"</p>
+                    <p class="news-text">Запрошуємо всіх бажаючих долучитися до нашого мовного клубу...</p>
+                </div>
+                <div class="swiper-slide news-item">
+                    <img src="assets/news-ph-test.svg" alt="news photo">
+                    <p class="news-header">Інтерактивний воркшоп "Говоримо без страху"</p>
+                    <p class="news-text">Запрошуємо всіх бажаючих долучитися до нашого мовного клубу...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-nav">
+            <div class="swiper-news-button-prev">
+                <img src="assets/arrow-left.svg" alt="arrow left img">
+            </div>
+            <div class="swiper-news-button-next">
+                <img src="assets/arrow-right.svg" alt="arrow right img">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="feedbacks-sc sc-base" id="feedback-sc">
+    <div class="feedbacks-div">
+        <div>
+            <p class="sc-header-p">ВІДГУКИ</p>
+            <img src="assets/sign.svg" alt="sign img">
+        </div>
+        <div class="swiper-container-fb">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide feedback-item">
+                    <p class="fb-item-head">Олена І.</p>
+                    <p class="fb-item-text">
+                        Рекомендую цей курс усім, хто хоче покращити свою англійську мову! Завдяки професійному підходу викладачів, вдалося досягти чудових результатів за короткий час. Дякую!
+                    </p>
+                </div>
+                <div class="swiper-slide feedback-item">
+                    <p class="fb-item-head">Олександр Г.</p>
+                    <p class="fb-item-text">
+                        Дуже задоволений курсом! За 10 занять вдалося покращити мої англійські навички. Рекомендую!
+                    </p>
+                </div>
+                <div class="swiper-slide feedback-item">
+                    <p class="fb-item-head">Марія С.</p>
+                    <p class="fb-item-text">
+                        Неймовірний досвід! Після лише декількох занять відчуваю себе впевненіше в спілкуванні англійською. Викладачі дуже дружелюбні та професійні!
+                    </p>
+                </div>
+                <div class="swiper-slide feedback-item">
+                    <p class="fb-item-head">Олександр Г.</p>
+                    <p class="fb-item-text">
+                        Дуже задоволений курсом! За 10 занять вдалося покращити мої англійські навички. Рекомендую!
+                    </p>
+                </div>
+                <div class="swiper-slide feedback-item">
+                    <p class="fb-item-head">Олександр Г.</p>
+                    <p class="fb-item-text">
+                        Дуже задоволений курсом! За 10 занять вдалося покращити мої англійські навички. Рекомендую!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="qas-sc sc-base" id="qas-sc">
+    <div class="qas-sc-div">
+        <div>
+            <p class="sc-header-p">ПИТАННЯ ТА ВІДПОВІДІ</p>
+        </div>
+        <div class="qas-items-div">
+            <div class="qas-item">
+                <div class="qas-item-expanded">
+                    <p class="qas-item-head-p">Для яких рівнів мови є курси?</p>
+                    <img src="assets/qas_arrow.svg" alt="arrow img" class="toggle-arrow">
+                </div>
+                <p class="qas-item-expand-p">Ми пропонуємо курси для всіх рівнів, від початківців до просунутих.</p>
+            </div>
+
+            <div class="qas-item">
+                <div class="qas-item-expanded">
+                    <p class="qas-item-head-p">Як визначити свій рівень мови?</p>
+                    <img src="assets/qas_arrow.svg" alt="arrow img" class="toggle-arrow">
+                </div>
+                <p class="qas-item-expand-p">Перед початком курсу ви пройдете безкоштовний тест на визначення рівня, щоб ми могли підібрати для вас найбільш відповідний курс.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="comment-sc sc-base" id="comment-sc">
+    <div class="all-comment">
+        <div class="comment-image">
+            <img src="assets/comment-img.svg" alt="comment invalid img">
+        </div>
+        <div>
+            <p class="comment-p">Залишити коментар</p>
+            <form action="" class="comment-form">
+                <input class="text-input" type="text" id="email" name="email" placeholder="Email">
+                <input class="text-input" type="text" id="fullName" name="fullName" placeholder="Ім'я та прізвище">
+                <textarea class="comment-text-input" type="text" id="comment" name="comment" placeholder="Ваш коментар"></textarea>
+            </form>
+            <a href="#" class="go-to-action-standart-btn">НАДІСЛАТИ</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div>
+        <div class="first-sc-foo">
+            <div class="gb-footer-div">
+                <img src="assets/foo-logo.svg" alt="logo img">
+            </div>
+
+            <div>
+                <div>
+                    <ul class="nav-ul">
+                        <li><a href="#courses-sc">КУРСИ</a></li>
+                        <li><a href="#about-sc">ПРО НАС</a></li>
+                        <li><a href="#teachers-sc">ВИКЛАДАЧІ</a></li>
+                        <li><a href="#cost-sc">ВАРТІСТЬ</a></li>
+                        <li><a href="#news-sc">НОВИНИ</a></li>
+                        <li><a href="#feedback-sc">ВІДГУКИ</a></li>
+                        <li><a href="#qas-sc">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="foo-line-fc"></div>
+            </div>
+
+        </div>
+
+        <div class="foo-mid-div">
+            <div class="foo-team-div">
+                <p class="footer-team">Команда висококваліфікованих спеціалістів з глибоким розумінням англійської мови та великим досвідом у викладанні. </p>
+            </div>
+            <div class="foo-line-mid"></div>
+            <div>
+                <p class="foo-tg-vib">Telegram, Viber</p>
+                <div class="foo-nums-div">
+                    <p class="foo-num foo-num-fc">+38 (093) 061-06-44</p>
+                    <p class="foo-num">+38 (096) 928-87-09</p>
+                </div>
+                <p class="foo-time">Пн-Сб з 9:00 до 18:00 (GMT +2) Нд, свята - вихідні</p>
+            </div>
+        </div>
+
+        <div class="foo-line"></div>
+
+        <div class="foo-last-sc">
+            <div class="foo-last-sc-fc-div">
+                <span class="foo-last-sc-fc-span foo-last-sc-fc-span-first">© 2024 Get Better</span>
+                <span class="foo-last-sc-fc-span foo-last-sc-fc-span-first">
+                    <a target="_blank" href="https://github.com/MilaGttP">Developed by MilaGttP</a>
+                </span>
+                <span class="foo-last-sc-fc-span">Created By</span>
+            </div>
+
+            <div class="foo-last-sc-sec-div">
+                <div class="foo-last-sc-sec-a-div">
+                    <a target="_blank" href="https://www.facebook.com/dasha.mudrik.3">
+                        <img src="assets/facebook_icon.svg" alt="facebook icon">
+                    </a>
+                </div>
+
+                <div class="foo-last-sc-sec-a-div">
+                    <a target="_blank" href="https://www.tiktok.com/@@dariamudrykk?_t=8pMQLRnccaU&_r=1">
+                        <img src="assets/tiktok_icon.svg" alt="tiktok icon">
+                    </a>
+                </div>
+
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/d.mudrik?igsh=MTU0bXN4NjBkcDdpdw%3D%3D&utm_source=qr">
+                        <img src="assets/instagram_icon.svg" alt="instagram icon">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
