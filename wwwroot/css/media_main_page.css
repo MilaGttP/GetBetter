@@ -1,0 +1,638 @@
+@media screen and (max-width: 1600px) {
+    .about-content {
+        width: 60%;
+    }    
+}
+
+/* AUXULIARY QUERY */
+@media screen and (max-width: 1500px) {
+    .all-comment {
+        margin-right: 120px;
+        margin-left: 120px;
+    }
+    
+
+    .about-content {
+        width: 74%;
+    }
+
+    /*  */
+
+    .qas-items-div {
+        width: 55%;
+    }
+    
+    /* FOOTER ADAPTIVITY */
+
+    footer {
+        padding: 35px 120px 20px 120px;
+    }
+}
+
+/* @media screen and (max-width: 1400px) {
+    
+} */
+
+@media screen and (max-width: 1200px) {
+    /* HEADER ADAPTIVITY */
+
+    .nav-ul li a {
+        margin-right: 2vb;
+    }
+
+    .head-btns div {
+        margin-right: 1.5vb;
+    }
+
+    .main-content-all {
+        width: 62%;
+    }
+
+    .all-filter-items {
+        margin-right: 0px;
+    }
+
+    .direction-choose-items-all {
+        margin-left: 200px;
+    }
+
+    .all-filter-items {
+        justify-content: center;
+    }
+    
+    .t-filter-img img {
+        display: none;
+    }
+
+    .courses-inf {
+        width: 80%;
+    }
+
+    .cost-nav {
+        display: flex;
+    }
+
+    .about-content {
+        width: 88%;
+    }
+
+    .corporate-lessons-sc-inf::before {
+        height: 15vh;
+    }
+    
+
+    .qas-items-div {
+        width: 65%;
+    }
+
+
+    .all-comment {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    /* FOOTER ADAPTIVITY */
+
+    footer {
+        padding: 35px 50px 20px 50px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    /* HEADER ADAPTIVITY */
+    
+    header {
+        padding: 1vb 0px;
+    }
+    
+    .nav-ul {
+        display: none;
+    }
+
+    .test-lesson-btn {
+        padding: 1vb 8vb;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 18px;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-top: 20px;
+        position: fixed;
+        z-index: 2000;
+        top: 0;
+        right: 0;
+    }
+    
+    .burger-menu span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #A215FF;
+        margin-bottom: 3px;
+        transition: all 0.3s ease;
+    }
+    
+    .burger-menu span:last-child {
+        margin-bottom: 0;
+    }
+    
+    .burger-menu.open span {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+    }
+    
+    .burger-menu.open span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 50%;
+        margin-top: -1.5px;
+    }
+    
+    .burger-menu.open span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-menu.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 50%;
+        margin-top: -1.5px;
+    }
+
+    .side-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #060C49;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.3s ease;
+    }
+
+    .side-menu.open {
+        right: 0;
+    }
+
+    .side-menu ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .side-menu ul li {
+        margin-bottom: 20px;
+    }
+
+    .side-menu ul li a {
+        color: #FFFFFF;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .side-menu ul li a:hover {
+        color: #FFA215;
+    }
+
+    .main-header {
+        text-align: center;
+    }
+
+    .direction-choose-items-all {
+        margin-left: 150px;
+    }
+
+    .about-content-img {
+        width: 400px;
+    }
+
+    .cost-item-main {
+        margin-top: 0px;
+    }
+
+    .courses-inf {
+        width: 100%;
+    }
+
+    .courses-inf-item {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .news-item {
+        padding: 30px;
+    }
+    
+    .news-item img {
+        width: 300px;
+    }
+
+    .cost-item {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .qas-items-div {
+        width: 70%;
+    }
+
+    .all-comment {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .comment-image {
+        display: none;
+    }
+
+    .go-to-action-standart-btn {
+        display: block;
+        text-align: center;
+    }
+
+    /* FOOTER ADAPTIVITY */
+
+    .footer-team {
+        max-width: 320px;
+    }
+}
+
+/* AUXULIARY QUERY */
+@media screen and (max-width: 860px) {
+    .cost-feach-div-items {
+        display: block;
+        margin-left: 40px;
+    }
+    
+    .about-content-img {
+        display: none;
+    }
+
+    .about-item-divs {
+        margin: 0 auto;
+    }
+
+    .footer-team {
+        max-width: 260px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background: none;
+        background-color: #030B3F;
+    }
+    
+    header {
+        padding-right: 35px;
+    }
+
+    .test-lesson-btn {
+        padding: 1vb 6vb;
+    }
+
+    .main-content-all {
+        width: 85%;
+    }
+
+    .all-choose-items {
+        display: block;
+    }
+
+    .direction-choose-items-all {
+        margin-left: 0;
+    }
+
+    .all-filter-items {
+        justify-content: space-between;
+        margin-left: 40px;
+    }
+
+    .all-filter-items {
+        margin-right: 20px;
+    }
+
+    .level-choose-items, .test-choose-items, .accent-choose-items, .direction-choose-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .choose-item {
+        margin-right: 15px;
+    }
+
+    .choose-item-header {
+        margin-bottom: 10px;
+    }
+
+    .level-choose-items, .test-choose-items, .accent-choose-items {
+        margin-bottom: 20px;
+    }
+
+    .corporate-lessons-sc-inf::before {
+        height: 75%;
+    }
+
+    .corp-lessons-main-description {
+        width: 75%;
+    }
+
+    .qas-items-div {
+        width: 85%;
+    }
+
+    footer {
+        padding: 35px 30px 20px 30px;
+    }
+
+    .foo-mid-div {
+        display: block;
+    }
+
+    .footer-team {
+        max-width: 400px;
+    }
+
+    .foo-nums-div {
+        justify-content: right;
+    }
+
+    .foo-last-sc-fc-span-first {
+        margin-right: 30px;
+    }    
+
+    .foo-last-sc-sec-a-div {
+        margin-right: 15px;
+    }
+}
+
+/* AUXULIARY QUERY */
+@media screen and (max-width: 650px) {
+    .foo-last-sc-fc-span-first {
+        margin-right: 20px;
+    }    
+
+    .foo-last-sc-sec-a-div {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .go-to-action-standart-btn {
+        font-size: 14px;
+    }
+
+    .test-lesson-btn {
+        padding: 1vb 1.8vb;
+    }
+    
+    .login-btn {
+        padding: 0.8vb 2vb;
+    }
+
+    .choose_lang_btn {
+        padding: 3px 1vb;
+    }
+
+    .sc-description-p-corp {
+        text-align: left;
+    }
+
+    .sc-btn-div {
+        width: 95%;
+    }
+
+    .main-header {
+        font-size: 40px;
+    }
+
+    .main-content-p {
+        font-size: 30px;
+    }
+
+    .cost-feach-div-items {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cost-feach-span {
+        font-size: 18px;
+    }
+    
+    .about-description-item {
+        margin-top: 5px;
+    }
+
+    .about-head-item {
+        font-size: 22px;
+    }
+
+    .sc-header-p {
+        font-size: 25px;
+    }
+
+    .news-nav, .cost-nav {
+        justify-content: space-between;
+    }
+
+    .news-item {
+        width: 320px;
+    }
+
+    .news-item img {
+        width: 250px;
+    }
+
+    .cost-nav {
+        margin-top: 10px;
+    }
+
+    .qas-item-head-p {
+        font-size: 16px;
+    }
+
+    .toggle-arrow {
+        width: 18px;
+    }
+
+    .qas-item-expand-p {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 35px 20px 20px 20px;
+    }
+
+    .foo-mid-div {
+        margin-top: 10px;
+    }
+
+    .foo-line-mid {
+        display: block;
+    }
+
+    .foo-tg-vib {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .foo-nums-div {
+        justify-content: left;
+    }
+
+    .foo-time {
+        text-align: left;
+    }
+
+    .foo-last-sc {
+        display: block;
+    }
+
+    .foo-last-sc-sec-div {
+        margin-top: 15px;
+    }
+
+    .foo-last-sc-sec-a-div {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sc-base {
+        margin-top: 0;
+    }
+    
+    .test-lesson-btn {
+        display: none;
+    }
+
+    .login-btn {
+        padding: 0.8vb 1.5vb;
+    }
+
+    .choose_lang_btn {
+        padding: 3px 1vb;
+    }
+
+    .free-less-span {
+        font-size: 13px;
+    }
+
+    .main-content-all {
+        width: 95%;
+    }
+
+    .main-header {
+        font-size: 30px;
+    }
+
+    .main-content-p {
+        font-size: 20px;
+    }
+
+    .choose-item {
+        margin-bottom: 5px;
+    }
+
+    .all-filter-items {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .teach-item img {
+        width: 220px;
+    }
+
+    .courses-inf-item {
+        padding: 30px 35px;
+    }
+
+    .courses-inf-item-header {
+        font-size: 25px;
+    }
+
+    .courses-inf-item-content {
+        font-size: 16px;
+    }
+
+    .cost-items-div {
+        width: 340px;
+    }
+
+    .cost-item {
+        width: 340px;
+    }
+
+    .cost-item-head-p {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .cost-item-less {
+        font-size: 18px;
+    }
+
+    .cost-item-p {
+        font-size: 16px;
+    }
+
+    .cost-item-less {
+        margin-bottom: 10px;
+    }
+
+    
+
+    .feedback-item {
+        width: 330px;
+        padding: 20px 30px;
+    }
+
+    .fb-item-head {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .comment-form {
+        max-width: 300px;
+    }
+
+    .comment-p {
+        font-size: 25px;
+    }
+
+    .foo-nums-div {
+        display: block;
+    }
+
+    .foo-last-sc-fc-div {
+        display: block;
+    }
+    
+    .foo-last-sc-fc-span {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .login-btn {
+        display: none;
+    }
+
+    .comment-form {
+        max-width: 260px;
+    }
+
+    .comment-p {
+        font-size: 22px;
+    }
+}
